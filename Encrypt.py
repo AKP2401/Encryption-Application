@@ -1,5 +1,4 @@
 import pandas as pd
-import time
 
 class Encryption:
 
@@ -37,3 +36,7 @@ class Encryption:
     
     def Decrypt(self, encrypted):
         return self.__Decode(encrypted)
+
+if __name__=="__main__":
+    EN = Encryption()
+    EN.Encrypt(input())
